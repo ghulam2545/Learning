@@ -1,0 +1,7 @@
+lexer.l contains lexer code.
+parser.y contains parser code.
+
+1 -- bison -d parser.y (this will produce parser.tab.h which is included in lexer.l)
+2 -- flex lexer.l
+
+3 -- gcc lex.yy.c parser.tab.c
